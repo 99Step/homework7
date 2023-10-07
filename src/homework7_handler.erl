@@ -1,11 +1,3 @@
-%%%-------------------------------------------------------------------
-%%% @author macbook
-%%% @copyright (C) 2023, <COMPANY>
-%%% @doc
-%%%
-%%% @end
-%%% Created : 06. окт. 2023 12:46
-%%%-------------------------------------------------------------------
 -module(homework7_handler).
 
 -behavior(cowboy_handler).
@@ -37,4 +29,3 @@ maybe_echo(<<"POST">>, false, Req0) ->
     Req0);
 maybe_echo(_, _, Req0) ->
   cowboy_req:reply(405, Req0).
-

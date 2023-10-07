@@ -137,4 +137,3 @@ parse_date(Rest) ->
   [Hour, Minute, Second] = binary:split(Time, <<":">>, [global]),
   {{binary_to_integer(Year), binary_to_integer(Month), binary_to_integer(Day)},
     {binary_to_integer(Hour), binary_to_integer(Minute), binary_to_integer(Second)}}.
-
